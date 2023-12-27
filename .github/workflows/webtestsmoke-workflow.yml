@@ -24,6 +24,7 @@ jobs:
             python -m pip install --upgrade pip
             pip install -U -r requirements.txt
             sudo npm install -g npm@10.2.5
+            sudo npm init playwright@latest --force
             sudo npx playwright test
             sudo npm install @playwright/tests@*
             sudo npx playwright install-deps
