@@ -45,7 +45,7 @@ jobs:
           if: always()
           uses: actions/download-artifact@v1
           with:
-            name: reports-chromium
+            name: results-chromium
               
         - name: Send Report
           if: always()
