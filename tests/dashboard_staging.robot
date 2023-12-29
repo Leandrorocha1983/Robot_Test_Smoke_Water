@@ -5,6 +5,7 @@ Suite Teardown      Close Browser    All
 
 *** Test Cases ***
 Acessar a home page do site Grouplinknetwork "STAGING"
+    [Tags]    página inicial group link network
     Abrir o navegador
     Ir para o site dashboard group link network
     Clicar no "accept cookies policy"
