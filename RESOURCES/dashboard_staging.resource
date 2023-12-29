@@ -22,7 +22,7 @@ Abrir o navegador
 
     ${TRACE_NAME}    FakerLibrary.Uuid 4
     ${NOW}           Get Current Date    result_format=%d-%m-%y_%H%m%S
-    New Context      viewport={'width': 1200, 'height': 800}
+    New Context      viewport={'width': 1366, 'height': 768}
     ...              tracing=${OUTPUT_DIR}/evidencies/traces/${NOW}/${TRACE_NAME}.zip
     # ...              recordVideo={'dir':'${OUTPUT_DIR}/evidencies/videos/${NOW}'}
 
@@ -71,7 +71,11 @@ Digitar o "Password" no campo Type your passoword
     Fill Text    css=input[type="password"]    txt=fzveqtsdkukz
 
 Clicar no botão de "log in"
-    Click    selector=//button[@class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-tdk7gy'][contains(.,'log in')]
+    Click    selector=//button[contains(.,'log in')]
+Conferir se o usuário está logado com sucesso
+    Get Element States    //span[contains(.,'Devices')]    validate    value & visible
+Selecionar um "GL Utilities"
+    Click    selector=//html[1]/body[1]/div[1]/div[3]/div[3]/div[3]/table[1]/tbody[1]/tr[1]/td[7]/div[1]/td[1]/div[1]/div[1]
 
 
 

@@ -23,4 +23,27 @@ Acessar a home page do site Grouplinknetwork "STAGING"
     Digitar o "Password" no campo Type your passoword
     Clicar no botão de "log in"
 
+Login com sucesso Group Link Network "STAGING"
+    [Tags]    logado na página Group Link Letwork
+    Abrir o navegador
+    Ir para o site dashboard group link network
+    Clicar no "accept cookies policy" 
+    Digitar o "Email" no campo Type your email
+    Digitar o "Password" no campo Type your passoword
+    Clicar no botão de "log in"
+    Conferir se o usuário está logado com sucesso
+
+Página Device List "STAGING"
+    [Tags]    tela device List
+    Abrir o navegador
+    Ir para o site dashboard group link network
+    Clicar no "accept cookies policy" 
+    Digitar o "Email" no campo Type your email
+    Digitar o "Password" no campo Type your passoword
+    Clicar no botão de "log in"
+    Selecionar um "GL Utilities"
+    
+
+
+
     

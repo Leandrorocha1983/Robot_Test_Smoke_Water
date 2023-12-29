@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231229 09:28:04.029" rpa="false" schemaversion="4">
+<suite id="s1" name="Dashboard Staging" source="c:\Robot_Test_Smoke_Water\tests\dashboard_staging.robot">
+<test id="s1-t1" name="Página Device List &quot;STAGING&quot;" line="36">
+<kw name="Abrir o navegador" library="dashboard_staging">
+<kw name="New Browser" library="Browser">
+<arg>browser=${BROWSER}</arg>
+<arg>headless=${HEADLESS}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20231229 09:28:05.037" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Robot_Test_Smoke_Water\\browser\\traces\\e6721d17-d9b6-4fda-b1a4-cab8e59f60af"}</msg>
+<msg timestamp="20231229 09:28:05.710" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Robot_Test_Smoke_Water\\browser\\traces\\e6721d17-d9b6-4fda-b1a4-cab8e59f60af"}</msg>
+<status status="PASS" starttime="20231229 09:28:05.021" endtime="20231229 09:28:05.710"/>
+</kw>
+<kw name="Uuid 4" library="FakerLibrary">
+<var>${TRACE_NAME}</var>
+<doc>Generate a random UUID4 object and cast it to another type if specified using a callable ``cast_to``.</doc>
+<msg timestamp="20231229 09:28:05.712" level="INFO">${TRACE_NAME} = 082737cb-41e7-4511-8d88-da0958300f91</msg>
+<status status="PASS" starttime="20231229 09:28:05.710" endtime="20231229 09:28:05.712"/>
+</kw>
+<kw name="Get Current Date" library="DateTime">
+<var>${NOW}</var>
+<arg>result_format=%d-%m-%y_%H%m%S</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<msg timestamp="20231229 09:28:05.712" level="INFO">${NOW} = 29-12-23_091205</msg>
+<status status="PASS" starttime="20231229 09:28:05.712" endtime="20231229 09:28:05.712"/>
+</kw>
+<kw name="New Context" library="Browser">
+<arg>viewport={'width': 1366, 'height': 768}</arg>
+<arg>tracing=${OUTPUT_DIR}/evidencies/traces/${NOW}/${TRACE_NAME}.zip</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<msg timestamp="20231229 09:28:05.728" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "tracing": "C:\\Robot_Test_Smoke_Water/evidencies/traces/29-12-23_091205/082737cb-41e7-4511-8d88-da0958300f91.zip",
+  "viewport": {
+    "height": 768,
+    "width": 1366
+  }
+}</msg>
+<msg timestamp="20231229 09:28:05.756" level="INFO">Successfully created context and trace file will be saved to: C:\Robot_Test_Smoke_Water\evidencies\traces\29-12-23_091205\082737cb-41e7-4511-8d88-da0958300f91.zip</msg>
+<msg timestamp="20231229 09:28:05.756" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'tracing': 'C:\\Robot_Test_Smoke_Water/evidencies/traces/29-12-23_091205/082737cb-41e7-4511-8d88-da0958300f91.zip', 'viewport': {'height': 768, 'width': 1366}, 'trace': {'screenshots': True, 'snapshots': True}}</msg>
+<status status="PASS" starttime="20231229 09:28:05.712" endtime="20231229 09:28:05.756"/>
+</kw>
+<status status="PASS" starttime="20231229 09:28:05.021" endtime="20231229 09:28:05.756"/>
+</kw>
+<kw name="Ir para o site dashboard group link network" library="dashboard_staging">
+<kw name="Set Browser Timeout" library="Browser">
+<var>${old_timeout}</var>
+<arg>1m 30 seconds</arg>
+<tag>Config</tag>
+<tag>Setter</tag>
+<doc>Sets the timeout used by most input and getter keywords.</doc>
+<msg timestamp="20231229 09:28:05.792" level="INFO">Set timeout to: 90000</msg>
+<msg timestamp="20231229 09:28:05.792" level="INFO">${old_timeout} = 10 seconds</msg>
+<status status="PASS" starttime="20231229 09:28:05.756" endtime="20231229 09:28:05.792"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>url=${SITE_DASHBOARD_STAGING}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20231229 09:28:08.867" level="INFO">Successfully initialized new page object and opened url: https://dashboard-s.grouplinknetwork.com/login</msg>
+<status status="PASS" starttime="20231229 09:28:05.792" endtime="20231229 09:28:08.867"/>
+</kw>
+<kw name="Set Browser Timeout" library="Browser">
+<arg>${old_timeout}</arg>
+<tag>Config</tag>
+<tag>Setter</tag>
+<doc>Sets the timeout used by most input and getter keywords.</doc>
+<msg timestamp="20231229 09:28:08.906" level="INFO">Set timeout to: 10000</msg>
+<status status="PASS" starttime="20231229 09:28:08.867" endtime="20231229 09:28:08.907"/>
+</kw>
+<status status="PASS" starttime="20231229 09:28:05.756" endtime="20231229 09:28:08.907"/>
+</kw>
+<kw name="Clicar no &quot;accept cookies policy&quot;" library="dashboard_staging">
+<kw name="Click" library="Browser">
+<arg>selector=${Get Cookies}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<msg timestamp="20231229 09:28:09.032" level="INFO">Highlighted 1 elements for 2000.</msg>
+<status status="PASS" starttime="20231229 09:28:08.908" endtime="20231229 09:28:11.110"/>
+</kw>
+<status status="PASS" starttime="20231229 09:28:08.908" endtime="20231229 09:28:11.110"/>
+</kw>
+<kw name="Digitar o &quot;Email&quot; no campo Type your email" library="dashboard_staging">
+<kw name="Fill Text" library="Browser">
+<arg>css=input[type="email"]</arg>
+<arg>txt=qa.water@grouplinknetwork.com</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20231229 09:28:11.127" level="INFO">Fills the text 'qa.water@grouplinknetwork.com' in the given field.</msg>
+<msg timestamp="20231229 09:28:11.171" level="INFO">Highlighted 1 elements for 2000.</msg>
+<status status="PASS" starttime="20231229 09:28:11.110" endtime="20231229 09:28:13.224"/>
+</kw>
+<status status="PASS" starttime="20231229 09:28:11.110" endtime="20231229 09:28:13.224"/>
+</kw>
+<kw name="Digitar o &quot;Password&quot; no campo Type your passoword" library="dashboard_staging">
+<kw name="Fill Text" library="Browser">
+<arg>css=input[type="password"]</arg>
+<arg>txt=fzveqtsdkukz</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20231229 09:28:13.224" level="INFO">Fills the text 'fzveqtsdkukz' in the given field.</msg>
+<msg timestamp="20231229 09:28:13.293" level="INFO">Highlighted 1 elements for 2000.</msg>
+<status status="PASS" starttime="20231229 09:28:13.224" endtime="20231229 09:28:15.342"/>
+</kw>
+<status status="PASS" starttime="20231229 09:28:13.224" endtime="20231229 09:28:15.342"/>
+</kw>
+<kw name="Clicar no botão de &quot;log in&quot;" library="dashboard_staging">
+<kw name="Click" library="Browser">
+<arg>selector=//button[contains(.,'log in')]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<msg timestamp="20231229 09:28:15.402" level="INFO">Highlighted 1 elements for 2000.</msg>
+<status status="PASS" starttime="20231229 09:28:15.342" endtime="20231229 09:28:17.474"/>
+</kw>
+<status status="PASS" starttime="20231229 09:28:15.342" endtime="20231229 09:28:17.474"/>
+</kw>
+<kw name="Selecionar um &quot;GL Utilities&quot;" library="dashboard_staging">
+<kw name="Click" library="Browser">
+<arg>selector=//html[1]/body[1]/div[1]/div[3]/div[3]/div[3]/table[1]/tbody[1]/tr[1]/td[7]/div[1]/td[1]/div[1]/div[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<msg timestamp="20231229 09:28:19.442" level="INFO">Highlighted 1 elements for 2000.</msg>
+<status status="PASS" starttime="20231229 09:28:17.474" endtime="20231229 09:28:21.625"/>
+</kw>
+<status status="PASS" starttime="20231229 09:28:17.474" endtime="20231229 09:28:21.625"/>
+</kw>
+<tag>tela device List</tag>
+<status status="PASS" starttime="20231229 09:28:05.021" endtime="20231229 09:28:21.625"/>
+</test>
+<kw name="Close Browser" library="Browser" type="TEARDOWN">
+<arg>All</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<msg timestamp="20231229 09:28:27.172" level="INFO">Closed all browsers</msg>
+<status status="PASS" starttime="20231229 09:28:26.961" endtime="20231229 09:28:27.172"/>
+</kw>
+<status status="PASS" starttime="20231229 09:28:04.032" endtime="20231229 09:28:27.172"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">tela device List</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Dashboard Staging">Dashboard Staging</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

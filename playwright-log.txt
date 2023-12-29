@@ -1,0 +1,164 @@
+{"level":30,"time":"2023-12-29T12:28:04.835Z","pid":20896,"hostname":"lrocha","msg":"Listening on 59149"}
+{"level":30,"time":"2023-12-29T12:28:05.013Z","pid":20896,"hostname":"lrocha","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-12-29T12:28:05.014Z","pid":20896,"hostname":"lrocha","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-12-29T12:28:05.016Z","pid":20896,"hostname":"lrocha","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-12-29T12:28:05.016Z","pid":20896,"hostname":"lrocha","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-12-29T12:28:05.019Z","pid":20896,"hostname":"lrocha","msg":"Start of node method evaluateJavascript"}
+================= Original suppressed error =================
+Error: No page open.
+    at PlaywrightServer.getActivePage (C:\Users\lroch\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10593:15)
+    at PlaywrightServer.evaluateJavascript (C:\Users\lroch\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10648:75)
+    at handleUnary (C:\Users\lroch\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:852:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+=============================================================
+{"level":30,"time":"2023-12-29T12:28:05.019Z","pid":20896,"hostname":"lrocha","msg":"Error of node method  evaluateJavascript"}
+{"level":30,"time":"2023-12-29T12:28:05.038Z","pid":20896,"hostname":"lrocha","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2023-12-29T12:28:05.697Z","pid":20896,"hostname":"lrocha","msg":"Adding browser to stack: chromium, version: 120.0.6099.28"}
+{"level":30,"time":"2023-12-29T12:28:05.698Z","pid":20896,"hostname":"lrocha","msg":"End of node method newBrowser"}
+{"level":30,"time":"2023-12-29T12:28:05.698Z","pid":20896,"hostname":"lrocha","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2023-12-29T12:28:05.704Z","pid":20896,"hostname":"lrocha","msg":"Start of node method evaluateJavascript"}
+================= Original suppressed error =================
+Error: No page open.
+    at PlaywrightServer.getActivePage (C:\Users\lroch\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10593:15)
+    at PlaywrightServer.evaluateJavascript (C:\Users\lroch\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10648:75)
+    at handleUnary (C:\Users\lroch\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:852:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+=============================================================
+{"level":30,"time":"2023-12-29T12:28:05.704Z","pid":20896,"hostname":"lrocha","msg":"Error of node method  evaluateJavascript"}
+{"level":30,"time":"2023-12-29T12:28:05.728Z","pid":20896,"hostname":"lrocha","msg":"Start of node method newContext"}
+{"level":30,"time":"2023-12-29T12:28:05.729Z","pid":20896,"hostname":"lrocha","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2023-12-29T12:28:05.729Z","pid":20896,"hostname":"lrocha","msg":"Trace file: C:\\Robot_Test_Smoke_Water\\evidencies\\traces\\29-12-23_091205\\082737cb-41e7-4511-8d88-da0958300f91.zip"}
+{"level":30,"time":"2023-12-29T12:28:05.740Z","pid":20896,"hostname":"lrocha","msg":"Tracing enabled with: { screenshots: true, snapshots: true }"}
+{"level":30,"time":"2023-12-29T12:28:05.741Z","pid":20896,"hostname":"lrocha","msg":"End of node method newContext"}
+{"level":30,"time":"2023-12-29T12:28:05.741Z","pid":20896,"hostname":"lrocha","msg":"Changed active context"}
+{"level":30,"time":"2023-12-29T12:28:05.750Z","pid":20896,"hostname":"lrocha","msg":"Start of node method evaluateJavascript"}
+================= Original suppressed error =================
+Error: No page open.
+    at PlaywrightServer.getActivePage (C:\Users\lroch\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10593:15)
+    at PlaywrightServer.evaluateJavascript (C:\Users\lroch\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10648:75)
+    at handleUnary (C:\Users\lroch\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:852:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+=============================================================
+{"level":30,"time":"2023-12-29T12:28:05.750Z","pid":20896,"hostname":"lrocha","msg":"Error of node method  evaluateJavascript"}
+{"level":30,"time":"2023-12-29T12:28:05.784Z","pid":20896,"hostname":"lrocha","msg":"Start of node method evaluateJavascript"}
+================= Original suppressed error =================
+Error: No page open.
+    at PlaywrightServer.getActivePage (C:\Users\lroch\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10593:15)
+    at PlaywrightServer.evaluateJavascript (C:\Users\lroch\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10648:75)
+    at handleUnary (C:\Users\lroch\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:852:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+=============================================================
+{"level":30,"time":"2023-12-29T12:28:05.784Z","pid":20896,"hostname":"lrocha","msg":"Error of node method  evaluateJavascript"}
+{"level":30,"time":"2023-12-29T12:28:05.817Z","pid":20896,"hostname":"lrocha","msg":"Start of node method newPage"}
+{"level":30,"time":"2023-12-29T12:28:05.817Z","pid":20896,"hostname":"lrocha","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2023-12-29T12:28:06.138Z","pid":20896,"hostname":"lrocha","msg":"Video path: undefined"}
+{"level":30,"time":"2023-12-29T12:28:06.138Z","pid":20896,"hostname":"lrocha","msg":"Changed active page"}
+{"level":30,"time":"2023-12-29T12:28:08.857Z","pid":20896,"hostname":"lrocha","msg":"End of node method newPage"}
+{"level":30,"time":"2023-12-29T12:28:08.863Z","pid":20896,"hostname":"lrocha","msg":"Start of node method evaluateJavascript"}
+{"level":30,"time":"2023-12-29T12:28:08.890Z","pid":20896,"hostname":"lrocha","msg":"End of node method evaluateJavascript"}
+{"level":30,"time":"2023-12-29T12:28:08.899Z","pid":20896,"hostname":"lrocha","msg":"Start of node method evaluateJavascript"}
+{"level":30,"time":"2023-12-29T12:28:08.908Z","pid":20896,"hostname":"lrocha","msg":"End of node method evaluateJavascript"}
+{"level":30,"time":"2023-12-29T12:28:08.910Z","pid":20896,"hostname":"lrocha","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2023-12-29T12:28:08.910Z","pid":20896,"hostname":"lrocha","msg":"Strict mode is enabled, find Locator with //h5[@class='MuiTypography-root MuiTypography-h5 css-i6vjuv'][contains(.,'accept all cookies')] in page."}
+{"level":30,"time":"2023-12-29T12:28:09.003Z","pid":20896,"hostname":"lrocha","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2023-12-29T12:28:09.005Z","pid":20896,"hostname":"lrocha","msg":"Start of node method highlightElements"}
+{"level":30,"time":"2023-12-29T12:28:09.005Z","pid":20896,"hostname":"lrocha","msg":"Strict mode is disabled, return Locator: //h5[@class='MuiTypography-root MuiTypography-h5 css-i6vjuv'][contains(.,'accept all cookies')] in page."}
+{"level":30,"time":"2023-12-29T12:28:09.008Z","pid":20896,"hostname":"lrocha","msg":"Locator count is 1"}
+{"level":30,"time":"2023-12-29T12:28:09.023Z","pid":20896,"hostname":"lrocha","msg":"End of node method highlightElements"}
+{"level":30,"time":"2023-12-29T12:28:11.027Z","pid":20896,"hostname":"lrocha","msg":"Start of node method click"}
+{"level":30,"time":"2023-12-29T12:28:11.027Z","pid":20896,"hostname":"lrocha","msg":"Strict mode is enabled, find Locator with //h5[@class='MuiTypography-root MuiTypography-h5 css-i6vjuv'][contains(.,'accept all cookies')] in page."}
+{"level":30,"time":"2023-12-29T12:28:11.102Z","pid":20896,"hostname":"lrocha","msg":"End of node method click"}
+{"level":30,"time":"2023-12-29T12:28:11.105Z","pid":20896,"hostname":"lrocha","msg":"Start of node method evaluateJavascript"}
+{"level":30,"time":"2023-12-29T12:28:11.115Z","pid":20896,"hostname":"lrocha","msg":"End of node method evaluateJavascript"}
+{"level":30,"time":"2023-12-29T12:28:11.123Z","pid":20896,"hostname":"lrocha","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2023-12-29T12:28:11.123Z","pid":20896,"hostname":"lrocha","msg":"Strict mode is enabled, find Locator with css=input[type=\"email\"] in page."}
+{"level":30,"time":"2023-12-29T12:28:11.147Z","pid":20896,"hostname":"lrocha","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2023-12-29T12:28:11.148Z","pid":20896,"hostname":"lrocha","msg":"Start of node method highlightElements"}
+{"level":30,"time":"2023-12-29T12:28:11.149Z","pid":20896,"hostname":"lrocha","msg":"Strict mode is disabled, return Locator: css=input[type=\"email\"] in page."}
+{"level":30,"time":"2023-12-29T12:28:11.151Z","pid":20896,"hostname":"lrocha","msg":"Locator count is 1"}
+{"level":30,"time":"2023-12-29T12:28:11.159Z","pid":20896,"hostname":"lrocha","msg":"End of node method highlightElements"}
+{"level":30,"time":"2023-12-29T12:28:13.166Z","pid":20896,"hostname":"lrocha","msg":"Start of node method fillText"}
+{"level":30,"time":"2023-12-29T12:28:13.166Z","pid":20896,"hostname":"lrocha","msg":"Strict mode is enabled, find Locator with css=input[type=\"email\"] in page."}
+{"level":30,"time":"2023-12-29T12:28:13.214Z","pid":20896,"hostname":"lrocha","msg":"End of node method fillText"}
+{"level":30,"time":"2023-12-29T12:28:13.218Z","pid":20896,"hostname":"lrocha","msg":"Start of node method evaluateJavascript"}
+{"level":30,"time":"2023-12-29T12:28:13.225Z","pid":20896,"hostname":"lrocha","msg":"End of node method evaluateJavascript"}
+{"level":30,"time":"2023-12-29T12:28:13.227Z","pid":20896,"hostname":"lrocha","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2023-12-29T12:28:13.227Z","pid":20896,"hostname":"lrocha","msg":"Strict mode is enabled, find Locator with css=input[type=\"password\"] in page."}
+{"level":30,"time":"2023-12-29T12:28:13.267Z","pid":20896,"hostname":"lrocha","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2023-12-29T12:28:13.269Z","pid":20896,"hostname":"lrocha","msg":"Start of node method highlightElements"}
+{"level":30,"time":"2023-12-29T12:28:13.269Z","pid":20896,"hostname":"lrocha","msg":"Strict mode is disabled, return Locator: css=input[type=\"password\"] in page."}
+{"level":30,"time":"2023-12-29T12:28:13.272Z","pid":20896,"hostname":"lrocha","msg":"Locator count is 1"}
+{"level":30,"time":"2023-12-29T12:28:13.283Z","pid":20896,"hostname":"lrocha","msg":"End of node method highlightElements"}
+{"level":30,"time":"2023-12-29T12:28:15.287Z","pid":20896,"hostname":"lrocha","msg":"Start of node method fillText"}
+{"level":30,"time":"2023-12-29T12:28:15.287Z","pid":20896,"hostname":"lrocha","msg":"Strict mode is enabled, find Locator with css=input[type=\"password\"] in page."}
+{"level":30,"time":"2023-12-29T12:28:15.334Z","pid":20896,"hostname":"lrocha","msg":"End of node method fillText"}
+{"level":30,"time":"2023-12-29T12:28:15.338Z","pid":20896,"hostname":"lrocha","msg":"Start of node method evaluateJavascript"}
+{"level":30,"time":"2023-12-29T12:28:15.347Z","pid":20896,"hostname":"lrocha","msg":"End of node method evaluateJavascript"}
+{"level":30,"time":"2023-12-29T12:28:15.349Z","pid":20896,"hostname":"lrocha","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2023-12-29T12:28:15.349Z","pid":20896,"hostname":"lrocha","msg":"Strict mode is enabled, find Locator with //button[contains(.,'log in')] in page."}
+{"level":30,"time":"2023-12-29T12:28:15.381Z","pid":20896,"hostname":"lrocha","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2023-12-29T12:28:15.383Z","pid":20896,"hostname":"lrocha","msg":"Start of node method highlightElements"}
+{"level":30,"time":"2023-12-29T12:28:15.383Z","pid":20896,"hostname":"lrocha","msg":"Strict mode is disabled, return Locator: //button[contains(.,'log in')] in page."}
+{"level":30,"time":"2023-12-29T12:28:15.385Z","pid":20896,"hostname":"lrocha","msg":"Locator count is 1"}
+{"level":30,"time":"2023-12-29T12:28:15.391Z","pid":20896,"hostname":"lrocha","msg":"End of node method highlightElements"}
+{"level":30,"time":"2023-12-29T12:28:17.397Z","pid":20896,"hostname":"lrocha","msg":"Start of node method click"}
+{"level":30,"time":"2023-12-29T12:28:17.397Z","pid":20896,"hostname":"lrocha","msg":"Strict mode is enabled, find Locator with //button[contains(.,'log in')] in page."}
+{"level":30,"time":"2023-12-29T12:28:17.460Z","pid":20896,"hostname":"lrocha","msg":"End of node method click"}
+{"level":30,"time":"2023-12-29T12:28:17.466Z","pid":20896,"hostname":"lrocha","msg":"Start of node method evaluateJavascript"}
+{"level":30,"time":"2023-12-29T12:28:17.476Z","pid":20896,"hostname":"lrocha","msg":"End of node method evaluateJavascript"}
+{"level":30,"time":"2023-12-29T12:28:17.478Z","pid":20896,"hostname":"lrocha","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2023-12-29T12:28:17.479Z","pid":20896,"hostname":"lrocha","msg":"Strict mode is enabled, find Locator with //html[1]/body[1]/div[1]/div[3]/div[3]/div[3]/table[1]/tbody[1]/tr[1]/td[7]/div[1]/td[1]/div[1]/div[1] in page."}
+{"level":30,"time":"2023-12-29T12:28:19.408Z","pid":20896,"hostname":"lrocha","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2023-12-29T12:28:19.410Z","pid":20896,"hostname":"lrocha","msg":"Start of node method highlightElements"}
+{"level":30,"time":"2023-12-29T12:28:19.411Z","pid":20896,"hostname":"lrocha","msg":"Strict mode is disabled, return Locator: //html[1]/body[1]/div[1]/div[3]/div[3]/div[3]/table[1]/tbody[1]/tr[1]/td[7]/div[1]/td[1]/div[1]/div[1] in page."}
+{"level":30,"time":"2023-12-29T12:28:19.414Z","pid":20896,"hostname":"lrocha","msg":"Locator count is 1"}
+{"level":30,"time":"2023-12-29T12:28:19.429Z","pid":20896,"hostname":"lrocha","msg":"End of node method highlightElements"}
+{"level":30,"time":"2023-12-29T12:28:21.434Z","pid":20896,"hostname":"lrocha","msg":"Start of node method click"}
+{"level":30,"time":"2023-12-29T12:28:21.434Z","pid":20896,"hostname":"lrocha","msg":"Strict mode is enabled, find Locator with //html[1]/body[1]/div[1]/div[3]/div[3]/div[3]/table[1]/tbody[1]/tr[1]/td[7]/div[1]/td[1]/div[1]/div[1] in page."}
+{"level":30,"time":"2023-12-29T12:28:21.622Z","pid":20896,"hostname":"lrocha","msg":"End of node method click"}
+{"level":30,"time":"2023-12-29T12:28:26.629Z","pid":20896,"hostname":"lrocha","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-12-29T12:28:26.635Z","pid":20896,"hostname":"lrocha","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-12-29T12:28:26.638Z","pid":20896,"hostname":"lrocha","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-12-29T12:28:26.640Z","pid":20896,"hostname":"lrocha","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-12-29T12:28:26.641Z","pid":20896,"hostname":"lrocha","msg":"Changed active context"}
+{"level":30,"time":"2023-12-29T12:28:26.641Z","pid":20896,"hostname":"lrocha","msg":"Changing current active page: page=831f6a5f-2c40-4a3d-9ffb-b099a1be86cf"}
+{"level":30,"time":"2023-12-29T12:28:26.641Z","pid":20896,"hostname":"lrocha","msg":"Changed active page"}
+{"level":30,"time":"2023-12-29T12:28:26.649Z","pid":20896,"hostname":"lrocha","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-12-29T12:28:26.652Z","pid":20896,"hostname":"lrocha","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-12-29T12:28:26.655Z","pid":20896,"hostname":"lrocha","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2023-12-29T12:28:26.656Z","pid":20896,"hostname":"lrocha","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2023-12-29T12:28:26.658Z","pid":20896,"hostname":"lrocha","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2023-12-29T12:28:26.659Z","pid":20896,"hostname":"lrocha","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2023-12-29T12:28:26.663Z","pid":20896,"hostname":"lrocha","msg":"Changing current active page: page=831f6a5f-2c40-4a3d-9ffb-b099a1be86cf"}
+{"level":30,"time":"2023-12-29T12:28:26.663Z","pid":20896,"hostname":"lrocha","msg":"Changed active page"}
+{"level":30,"time":"2023-12-29T12:28:26.668Z","pid":20896,"hostname":"lrocha","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-12-29T12:28:26.670Z","pid":20896,"hostname":"lrocha","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-12-29T12:28:26.672Z","pid":20896,"hostname":"lrocha","msg":"Changed active context"}
+{"level":30,"time":"2023-12-29T12:28:26.672Z","pid":20896,"hostname":"lrocha","msg":"Changing current active page: page=831f6a5f-2c40-4a3d-9ffb-b099a1be86cf"}
+{"level":30,"time":"2023-12-29T12:28:26.672Z","pid":20896,"hostname":"lrocha","msg":"Changed active page"}
+{"level":30,"time":"2023-12-29T12:28:26.674Z","pid":20896,"hostname":"lrocha","msg":"Start of node method closeContext"}
+{"level":30,"time":"2023-12-29T12:28:26.906Z","pid":20896,"hostname":"lrocha","msg":"Removed page=27f698a3-a848-4caf-b9d6-65df7ce56548 from context=176a41c0-db28-4311-bf41-b31bc80b26eb page stack"}
+{"level":30,"time":"2023-12-29T12:28:26.936Z","pid":20896,"hostname":"lrocha","msg":"End of node method closeContext"}
+{"level":30,"time":"2023-12-29T12:28:26.956Z","pid":20896,"hostname":"lrocha","msg":"Start of node method evaluateJavascript"}
+================= Original suppressed error =================
+Error: No page open.
+    at PlaywrightServer.getActivePage (C:\Users\lroch\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10593:15)
+    at PlaywrightServer.evaluateJavascript (C:\Users\lroch\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10648:75)
+    at handleUnary (C:\Users\lroch\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:852:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+=============================================================
+{"level":30,"time":"2023-12-29T12:28:26.957Z","pid":20896,"hostname":"lrocha","msg":"Error of node method  evaluateJavascript"}
+{"level":30,"time":"2023-12-29T12:28:27.009Z","pid":20896,"hostname":"lrocha","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2023-12-29T12:28:27.161Z","pid":20896,"hostname":"lrocha","msg":"End of node method closeAllBrowsers"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\lroch\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:9968:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\lroch\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10588:59)
+    at PlaywrightServer.setTimeout (C:\Users\lroch\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10838:57)
+    at handleUnary (C:\Users\lroch\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:852:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+=============================================================
+{"level":30,"time":"2023-12-29T12:28:27.188Z","pid":20896,"hostname":"lrocha","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-12-29T12:28:27.188Z","pid":20896,"hostname":"lrocha","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-12-29T12:28:29.224Z","pid":20896,"hostname":"lrocha","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2023-12-29T12:28:29.224Z","pid":20896,"hostname":"lrocha","msg":"End of node method closeAllBrowsers"}
