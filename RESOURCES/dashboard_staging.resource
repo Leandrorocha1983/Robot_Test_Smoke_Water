@@ -75,7 +75,21 @@ Clicar no botão de "log in"
 Conferir se o usuário está logado com sucesso
     Get Element States    //span[contains(.,'Devices')]    validate    value & visible
 Selecionar um "GL Utilities"
-    Click    selector=//html[1]/body[1]/div[1]/div[3]/div[3]/div[3]/table[1]/tbody[1]/tr[1]/td[7]/div[1]/td[1]/div[1]/div[1]
+    Click                  selector=//html[1]/body[1]/div[1]/div[3]/div[3]/div[3]/table[1]/tbody[1]/tr[1]/td[7]/div[1]/td[1]/div[1]/div[1]
+    Get Element States     //div[@data-cy='device-list-get-device-by-period-7d-0']    validate    value & visible
+    Click                  selector=//div[@data-cy='device-list-get-device-by-period-3d-0']
+    Get Element States     //div[@data-cy='device-list-get-device-by-period-3d-0']
+    Click                  selector=//div[@data-cy='device-list-get-device-by-period-15d-0']
+    Get Element States     //div[@data-cy='device-list-get-device-by-period-15d-0']
+    Click                  selector=//div[@data-cy='device-list-get-device-by-period-30d-0']
+    Get Element States     //div[@data-cy='device-list-get-device-by-period-30d-0']
+    Get Element            selector=//th[contains(.,'Device ID')]
+    Get Element            selector=//th[contains(.,'Remote ID')]
+    Get Element            selector=//th[contains(.,'Name')]
+    Get Element            selector=//th[contains(.,'Activation')]
+    Get Element            selector=//th[contains(.,'Last Event')]
+    Get Element            selector=//th[contains(.,'Device Location')]
+    Get Element            selector=//th[contains(.,'Alerts')]
 
 
 
