@@ -1,11 +1,16 @@
+*** Keywords ***
+Tirar Print
+    Take Screenshot
+
 *** Settings ***
 Resource            ../RESOURCES/dashboard_staging.resource
 Suite Teardown      Close Browser    All
+Test Teardown       Tirar Print
     
 
 *** Test Cases ***
 Acessar a home page do site Grouplinknetwork "STAGING"
-    [Tags]    página inicial group link network
+    [Tags]    Página inicial group link network
     Abrir o navegador
     Ir para o site dashboard group link network
     Clicar no "accept cookies policy"
@@ -24,7 +29,7 @@ Acessar a home page do site Grouplinknetwork "STAGING"
     Clicar no botão de "log in"
 
 Login com sucesso Group Link Network "STAGING"
-    [Tags]    logado na página Group Link Letwork
+    [Tags]    Logado na página Group Link Letwork
     Abrir o navegador
     Ir para o site dashboard group link network
     Clicar no "accept cookies policy" 
@@ -34,15 +39,27 @@ Login com sucesso Group Link Network "STAGING"
     Conferir se o usuário está logado com sucesso
 
 Página Device List "STAGING"
-    [Tags]    tela device List
+    [Tags]    Tela Device List
     Abrir o navegador
     Ir para o site dashboard group link network
     Clicar no "accept cookies policy" 
     Digitar o "Email" no campo Type your email
     Digitar o "Password" no campo Type your passoword
     Clicar no botão de "log in"
-    Selecionar um "GL Utilities"
+    Selecionar o "GL Utilities Device List"
     
+Página Event List "STAGING" 
+    [Tags]    Tela Event List 
+    Abrir o navegador
+    Ir para o site dashboard group link network
+    Clicar no "accept cookies policy" 
+    Digitar o "Email" no campo Type your email
+    Digitar o "Password" no campo Type your passoword
+    Clicar no botão de "log in"  
+    Selecionar o "GL Utilities Event List"
+
+
+
 
 
 

@@ -1,9 +1,11 @@
 *** Settings ***
 Library    Browser
-# ...        Timeout=00:00:05
+# ...        Timeout=00:00:30
 ...        enable_presenter_mode=${true}
 Library    FakerLibrary
 Library    DateTime
+Library    Screenshot
+
 
 
 *** Variables ***
@@ -74,7 +76,7 @@ Clicar no botão de "log in"
     Click    selector=//button[contains(.,'log in')]
 Conferir se o usuário está logado com sucesso
     Get Element States    //span[contains(.,'Devices')]    validate    value & visible
-Selecionar um "GL Utilities"
+Selecionar o "GL Utilities Device List"
     Click                  selector=//html[1]/body[1]/div[1]/div[3]/div[3]/div[3]/table[1]/tbody[1]/tr[1]/td[7]/div[1]/td[1]/div[1]/div[1]
     Get Element States     //div[@data-cy='device-list-get-device-by-period-7d-0']    validate    value & visible
     Click                  selector=//div[@data-cy='device-list-get-device-by-period-3d-0']
@@ -91,6 +93,20 @@ Selecionar um "GL Utilities"
     Get Element            selector=//th[contains(.,'Device Location')]
     Get Element            selector=//th[contains(.,'Alerts')]
 
+Selecionar o "GL Utilities Event List"    
+    Click                  selector=//button[contains(.,'Events')]    
+    Get Element            (//span[@class='eventList_title__n6WMO'][contains(.,'Event List')])[1]
+    Click                  selector=//button[@data-cy='dropDownButton-select-columns'][contains(.,'SelectedAll')]   
+    Click                  //label[@for='All'][contains(.,'All')]     
+    Click                  //label[@for='delta-2'][contains(.,'Delta')]  
+    Click                  //label[@for='deviceId-3'][contains(.,'Device ID')]    
+    Click                  //label[@for='liters-5'][contains(.,'Volume')]
+    Click                  (//button[@class='refreshSelector_dropdown__iYwtB'][contains(.,'Off')])[1]   
+    Click                  //button[@class='refreshSelector_dropOption__9KRbw'][contains(.,'30 sec')]
+    Click                  (//button[@class='eventDateCard_dateButton__yTXz5'][contains(.,'Last 30 minutes')])[1]
+    Click                  (//button[contains(.,'apply date range')])[1]
+    Click                  (//button[contains(.,'Last 5 minutes')])[1]
+    
 
 
     
