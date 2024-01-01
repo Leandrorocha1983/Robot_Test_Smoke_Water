@@ -106,6 +106,28 @@ Selecionar o "GL Utilities Event List"
     Click                  (//button[@class='eventDateCard_dateButton__yTXz5'][contains(.,'Last 30 minutes')])[1]
     Click                  (//button[contains(.,'apply date range')])[1]
     Click                  (//button[contains(.,'Last 5 minutes')])[1]
+    Get Element            selector=(//p[contains(.,'Event Created')])[1]
+    Get Element            selector=//p[contains(.,'Event Sent')]
+    Get Element            selector=//p[contains(.,'Delta')]
+    Get Element            selector=//div[contains(@class,'PB4cB MuiBox-root css-0')]
+    Get Element            selector=//p[contains(.,'RSSI')]
+    Get Element            selector=//p[contains(.,'Volume')]
+    Get Element            selector=//p[contains(.,'Channel')]
+
+Selecionar o Event List "Selected All, Off, Relative time ranges"
+    Click                  selector=//button[contains(.,'SelectedAll')]
+    Click                  selector=//label[contains(.,'All')]   
+    Get Text               selector=//span[contains(.,'Columns')]
+    Get Text               selector=//span[contains(.,'(0)')] 
+    Click                  selector=//label[contains(.,'Event Created')]    
+    Click                  selector=//button[contains(.,'Done')]
+    Get Text               selector=//div[@class='dropdownCheckboxSecondary_left__wQnFN'][contains(.,'Selected(1)')]
+    Get Element States     (//p[contains(.,'Event Created')])[1]    validate    value & visible
+
+
+
+
+
     
 
 

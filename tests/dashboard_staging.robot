@@ -58,6 +58,16 @@ Página Event List "STAGING"
     Clicar no botão de "log in"  
     Selecionar o "GL Utilities Event List"
 
+Página Event List "Selected All" 
+    [Tags]    Tela Event List Selected All
+    Abrir o navegador
+    Ir para o site dashboard group link network
+    Clicar no "accept cookies policy" 
+    Digitar o "Email" no campo Type your email
+    Digitar o "Password" no campo Type your passoword
+    Clicar no botão de "log in"  
+    Selecionar o "GL Utilities Event List"
+    Selecionar o Event List "Selected All, Off, Relative time ranges"
 
 
 
