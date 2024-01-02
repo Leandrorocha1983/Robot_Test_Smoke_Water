@@ -12,7 +12,7 @@ jobs:
         permissions: write-all
         strategy:
           matrix:
-            browser: [chromium, firefox, webkit]
+            browser: [chromium, firefox, edge]
           fail-fast: false
         steps:
           - name: Checlout
