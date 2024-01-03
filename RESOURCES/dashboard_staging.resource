@@ -24,7 +24,7 @@ Abrir o navegador
 
     ${TRACE_NAME}    FakerLibrary.Uuid 4
     ${NOW}           Get Current Date    result_format=%d-%m-%y_%H%m%S
-    New Context      viewport={'width': 1366, 'height': 768}
+    New Context      viewport={'width': 1345, 'height': 610}
     ...              tracing=${OUTPUT_DIR}/evidencies/traces/${NOW}/${TRACE_NAME}.zip
     # ...              recordVideo={'dir':'${OUTPUT_DIR}/evidencies/videos/${NOW}'}
 
@@ -123,6 +123,15 @@ Selecionar o Event List "Selected All, Off, Relative time ranges"
     Click                  selector=//button[contains(.,'Done')]
     Get Text               selector=//div[@class='dropdownCheckboxSecondary_left__wQnFN'][contains(.,'Selected(1)')]
     Get Element States     (//p[contains(.,'Event Created')])[1]    validate    value & visible
+
+Selecionar o "GL Utilities Reports"
+    Click                  selector=//button[contains(.,'Reports')]
+    Click                  selector=//button[contains(.,'new report')]
+    Fill Text              selector=//input[contains(@placeholder,'Report Name')]    txt=QaTeste 
+    Click                  selector=//input[@value='Select'] 
+    Click                  selector=//div[@aria-label='Choose Wednesday, January 3rd, 2024']
+    Click                  selector=//button[contains(.,'Done')]
+   
 
 
 

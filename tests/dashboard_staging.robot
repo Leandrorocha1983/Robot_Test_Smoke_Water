@@ -29,7 +29,7 @@ Acessar a home page do site Grouplinknetwork "STAGING"
     Clicar no botão de "log in"
 
 Login com sucesso Group Link Network "STAGING"
-    [Tags]    Logado na página Group Link Letwork
+    [Tags]    Logado na página Group Link Network
     Abrir o navegador
     Ir para o site dashboard group link network
     Clicar no "accept cookies policy" 
@@ -68,6 +68,17 @@ Página Event List "Selected All"
     Clicar no botão de "log in"  
     Selecionar o "GL Utilities Event List"
     Selecionar o Event List "Selected All, Off, Relative time ranges"
+
+Página Reports "STAGING" 
+    [Tags]    Tela Reports 
+    Abrir o navegador
+    Ir para o site dashboard group link network
+    Clicar no "accept cookies policy" 
+    Digitar o "Email" no campo Type your email
+    Digitar o "Password" no campo Type your passoword
+    Clicar no botão de "log in"  
+    Selecionar o "GL Utilities Reports"  
+
 
 
 

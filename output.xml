@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20240101 10:45:38.464" rpa="false" schemaversion="4">
-<suite id="s1" name="Dashboard Staging" source="c:\Robot_Test_Smoke_Water\tests\dashboard_staging.robot">
-<test id="s1-t1" name="Página Event List &quot;Selected All&quot;" line="61">
-<kw name="Abrir o navegador" library="dashboard_staging">
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20240103 17:14:19.938" rpa="false" schemaversion="4">
+<suite id="s1" name="Smart Retail Staging" source="c:\Robot_Test_Smoke_Water\tests\smart_retail_staging.robot">
+<test id="s1-t1" name="Acessar a home page do site Grouplinknetwork Smart Retail &quot;STAGING&quot;" line="12">
+<kw name="Abrir o navegador" library="smart_retail_staging">
 <kw name="New Browser" library="Browser">
 <arg>browser=${BROWSER}</arg>
 <arg>headless=${HEADLESS}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<msg timestamp="20240101 10:45:39.551" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Robot_Test_Smoke_Water\\browser\\traces\\ecb93c9e-9504-4a36-b69e-62f3527565a1"}</msg>
-<msg timestamp="20240101 10:45:39.904" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Robot_Test_Smoke_Water\\browser\\traces\\ecb93c9e-9504-4a36-b69e-62f3527565a1"}</msg>
-<status status="PASS" starttime="20240101 10:45:39.543" endtime="20240101 10:45:39.904"/>
+<msg timestamp="20240103 17:14:20.986" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Robot_Test_Smoke_Water\\browser\\traces\\6ca5a8aa-c3b4-4ebe-90e3-0cabb88f22cc"}</msg>
+<msg timestamp="20240103 17:14:21.357" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Robot_Test_Smoke_Water\\browser\\traces\\6ca5a8aa-c3b4-4ebe-90e3-0cabb88f22cc"}</msg>
+<status status="PASS" starttime="20240103 17:14:20.967" endtime="20240103 17:14:21.357"/>
 </kw>
 <kw name="Uuid 4" library="FakerLibrary">
 <var>${TRACE_NAME}</var>
 <doc>Generate a random UUID4 object and cast it to another type if specified using a callable ``cast_to``.</doc>
-<msg timestamp="20240101 10:45:39.914" level="INFO">${TRACE_NAME} = 7b9a1b21-c41e-4b44-96ef-beeabfcc1d56</msg>
-<status status="PASS" starttime="20240101 10:45:39.904" endtime="20240101 10:45:39.914"/>
+<msg timestamp="20240103 17:14:21.357" level="INFO">${TRACE_NAME} = 8b1d42ab-cd60-41af-86fe-6718a5312ed3</msg>
+<status status="PASS" starttime="20240103 17:14:21.357" endtime="20240103 17:14:21.357"/>
 </kw>
 <kw name="Get Current Date" library="DateTime">
 <var>${NOW}</var>
 <arg>result_format=%d-%m-%y_%H%m%S</arg>
 <doc>Returns current local or UTC time with an optional increment.</doc>
-<msg timestamp="20240101 10:45:39.915" level="INFO">${NOW} = 01-01-24_100139</msg>
-<status status="PASS" starttime="20240101 10:45:39.914" endtime="20240101 10:45:39.915"/>
+<msg timestamp="20240103 17:14:21.357" level="INFO">${NOW} = 03-01-24_170121</msg>
+<status status="PASS" starttime="20240103 17:14:21.357" endtime="20240103 17:14:21.357"/>
 </kw>
 <kw name="New Context" library="Browser">
-<arg>viewport={'width': 1366, 'height': 768}</arg>
+<arg>viewport={'width': 1345, 'height': 610}</arg>
 <arg>tracing=${OUTPUT_DIR}/evidencies/traces/${NOW}/${TRACE_NAME}.zip</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<msg timestamp="20240101 10:45:39.940" level="INFO">{
+<msg timestamp="20240103 17:14:21.368" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -41,361 +41,145 @@
   "offline": false,
   "reducedMotion": "no-preference",
   "serviceWorkers": "allow",
-  "tracing": "C:\\Robot_Test_Smoke_Water/evidencies/traces/01-01-24_100139/7b9a1b21-c41e-4b44-96ef-beeabfcc1d56.zip",
+  "tracing": "C:\\Robot_Test_Smoke_Water/evidencies/traces/03-01-24_170121/8b1d42ab-cd60-41af-86fe-6718a5312ed3.zip",
   "viewport": {
-    "height": 768,
-    "width": 1366
+    "height": 610,
+    "width": 1345
   }
 }</msg>
-<msg timestamp="20240101 10:45:39.971" level="INFO">Successfully created context and trace file will be saved to: C:\Robot_Test_Smoke_Water\evidencies\traces\01-01-24_100139\7b9a1b21-c41e-4b44-96ef-beeabfcc1d56.zip</msg>
-<msg timestamp="20240101 10:45:39.971" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'tracing': 'C:\\Robot_Test_Smoke_Water/evidencies/traces/01-01-24_100139/7b9a1b21-c41e-4b44-96ef-beeabfcc1d56.zip', 'viewport': {'height': 768, 'width': 1366}, 'trace': {'screenshots': True, 'snapshots': True}}</msg>
-<status status="PASS" starttime="20240101 10:45:39.915" endtime="20240101 10:45:39.972"/>
+<msg timestamp="20240103 17:14:21.385" level="INFO">Successfully created context and trace file will be saved to: C:\Robot_Test_Smoke_Water\evidencies\traces\03-01-24_170121\8b1d42ab-cd60-41af-86fe-6718a5312ed3.zip</msg>
+<msg timestamp="20240103 17:14:21.385" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'tracing': 'C:\\Robot_Test_Smoke_Water/evidencies/traces/03-01-24_170121/8b1d42ab-cd60-41af-86fe-6718a5312ed3.zip', 'viewport': {'height': 610, 'width': 1345}, 'trace': {'screenshots': True, 'snapshots': True}}</msg>
+<status status="PASS" starttime="20240103 17:14:21.357" endtime="20240103 17:14:21.385"/>
 </kw>
-<status status="PASS" starttime="20240101 10:45:39.535" endtime="20240101 10:45:39.972"/>
+<status status="PASS" starttime="20240103 17:14:20.967" endtime="20240103 17:14:21.385"/>
 </kw>
-<kw name="Ir para o site dashboard group link network" library="dashboard_staging">
+<kw name="Ir para o site dashboard group link network" library="smart_retail_staging">
 <kw name="Set Browser Timeout" library="Browser">
 <var>${old_timeout}</var>
 <arg>1m 30 seconds</arg>
 <tag>Config</tag>
 <tag>Setter</tag>
 <doc>Sets the timeout used by most input and getter keywords.</doc>
-<msg timestamp="20240101 10:45:40.007" level="INFO">Set timeout to: 90000</msg>
-<msg timestamp="20240101 10:45:40.007" level="INFO">${old_timeout} = 10 seconds</msg>
-<status status="PASS" starttime="20240101 10:45:39.975" endtime="20240101 10:45:40.007"/>
+<msg timestamp="20240103 17:14:21.420" level="INFO">Set timeout to: 90000</msg>
+<msg timestamp="20240103 17:14:21.420" level="INFO">${old_timeout} = 10 seconds</msg>
+<status status="PASS" starttime="20240103 17:14:21.400" endtime="20240103 17:14:21.420"/>
 </kw>
 <kw name="New Page" library="Browser">
 <arg>url=${SITE_DASHBOARD_STAGING}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<msg timestamp="20240101 10:45:43.799" level="INFO">Successfully initialized new page object and opened url: https://dashboard-s.grouplinknetwork.com/login</msg>
-<status status="PASS" starttime="20240101 10:45:40.007" endtime="20240101 10:45:43.799"/>
+<msg timestamp="20240103 17:14:23.520" level="INFO">Successfully initialized new page object and opened url: https://dashboard-s.grouplinknetwork.com/login</msg>
+<status status="PASS" starttime="20240103 17:14:21.420" endtime="20240103 17:14:23.520"/>
 </kw>
 <kw name="Set Browser Timeout" library="Browser">
 <arg>${old_timeout}</arg>
 <tag>Config</tag>
 <tag>Setter</tag>
 <doc>Sets the timeout used by most input and getter keywords.</doc>
-<msg timestamp="20240101 10:45:43.825" level="INFO">Set timeout to: 10000</msg>
-<status status="PASS" starttime="20240101 10:45:43.799" endtime="20240101 10:45:43.825"/>
+<msg timestamp="20240103 17:14:23.559" level="INFO">Set timeout to: 10000</msg>
+<status status="PASS" starttime="20240103 17:14:23.520" endtime="20240103 17:14:23.561"/>
 </kw>
-<status status="PASS" starttime="20240101 10:45:39.974" endtime="20240101 10:45:43.825"/>
+<status status="PASS" starttime="20240103 17:14:21.385" endtime="20240103 17:14:23.561"/>
 </kw>
-<kw name="Clicar no &quot;accept cookies policy&quot;" library="dashboard_staging">
+<kw name="Clicar no &quot;accept cookies policy&quot;" library="smart_retail_staging">
 <kw name="Click" library="Browser">
 <arg>selector=${Get Cookies}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<msg timestamp="20240101 10:45:43.941" level="INFO">Highlighted 1 elements for 2000.</msg>
-<status status="PASS" starttime="20240101 10:45:43.825" endtime="20240101 10:45:46.010"/>
+<msg timestamp="20240103 17:14:23.676" level="INFO">Highlighted 1 elements for 2000.</msg>
+<status status="PASS" starttime="20240103 17:14:23.561" endtime="20240103 17:14:25.752"/>
 </kw>
-<status status="PASS" starttime="20240101 10:45:43.825" endtime="20240101 10:45:46.010"/>
+<status status="PASS" starttime="20240103 17:14:23.561" endtime="20240103 17:14:25.752"/>
 </kw>
-<kw name="Digitar o &quot;Email&quot; no campo Type your email" library="dashboard_staging">
+<kw name="Digitar o &quot;Email&quot; no campo Type your email" library="smart_retail_staging">
 <kw name="Fill Text" library="Browser">
 <arg>css=input[type="email"]</arg>
-<arg>txt=qa.water@grouplinknetwork.com</arg>
+<arg>txt=qa.smart@grouplinknetwork.com</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20240101 10:45:46.022" level="INFO">Fills the text 'qa.water@grouplinknetwork.com' in the given field.</msg>
-<msg timestamp="20240101 10:45:46.069" level="INFO">Highlighted 1 elements for 2000.</msg>
-<status status="PASS" starttime="20240101 10:45:46.011" endtime="20240101 10:45:48.123"/>
+<msg timestamp="20240103 17:14:25.774" level="INFO">Fills the text 'qa.smart@grouplinknetwork.com' in the given field.</msg>
+<msg timestamp="20240103 17:14:25.816" level="INFO">Highlighted 1 elements for 2000.</msg>
+<status status="PASS" starttime="20240103 17:14:25.752" endtime="20240103 17:14:27.859"/>
 </kw>
-<status status="PASS" starttime="20240101 10:45:46.011" endtime="20240101 10:45:48.123"/>
+<status status="PASS" starttime="20240103 17:14:25.752" endtime="20240103 17:14:27.859"/>
 </kw>
-<kw name="Digitar o &quot;Password&quot; no campo Type your passoword" library="dashboard_staging">
+<kw name="Digitar o &quot;Password&quot; no campo Type your passoword" library="smart_retail_staging">
 <kw name="Fill Text" library="Browser">
 <arg>css=input[type="password"]</arg>
 <arg>txt=fzveqtsdkukz</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20240101 10:45:48.146" level="INFO">Fills the text 'fzveqtsdkukz' in the given field.</msg>
-<msg timestamp="20240101 10:45:48.220" level="INFO">Highlighted 1 elements for 2000.</msg>
-<status status="PASS" starttime="20240101 10:45:48.123" endtime="20240101 10:45:50.270"/>
+<msg timestamp="20240103 17:14:27.877" level="INFO">Fills the text 'fzveqtsdkukz' in the given field.</msg>
+<msg timestamp="20240103 17:14:27.914" level="INFO">Highlighted 1 elements for 2000.</msg>
+<status status="PASS" starttime="20240103 17:14:27.868" endtime="20240103 17:14:29.958"/>
 </kw>
-<status status="PASS" starttime="20240101 10:45:48.123" endtime="20240101 10:45:50.270"/>
+<status status="PASS" starttime="20240103 17:14:27.867" endtime="20240103 17:14:29.958"/>
 </kw>
-<kw name="Clicar no botão de &quot;log in&quot;" library="dashboard_staging">
+<kw name="Clicar no botão de &quot;log in&quot;" library="smart_retail_staging">
 <kw name="Click" library="Browser">
 <arg>selector=//button[contains(.,'log in')]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<msg timestamp="20240101 10:45:50.318" level="INFO">Highlighted 1 elements for 2000.</msg>
-<status status="PASS" starttime="20240101 10:45:50.271" endtime="20240101 10:45:52.387"/>
+<msg timestamp="20240103 17:14:30.017" level="INFO">Highlighted 1 elements for 2000.</msg>
+<status status="PASS" starttime="20240103 17:14:29.958" endtime="20240103 17:14:32.080"/>
 </kw>
-<status status="PASS" starttime="20240101 10:45:50.271" endtime="20240101 10:45:52.387"/>
+<status status="PASS" starttime="20240103 17:14:29.958" endtime="20240103 17:14:32.080"/>
 </kw>
-<kw name="Selecionar o &quot;GL Utilities Event List&quot;" library="dashboard_staging">
-<kw name="Click" library="Browser">
-<arg>selector=//button[contains(.,'Events')]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<msg timestamp="20240101 10:45:53.923" level="INFO">Highlighted 1 elements for 2000.</msg>
-<status status="PASS" starttime="20240101 10:45:52.389" endtime="20240101 10:45:56.542"/>
-</kw>
-<kw name="Get Element" library="Browser">
-<arg>(//span[@class='eventList_title__n6WMO'][contains(.,'Event List')])[1]</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<msg timestamp="20240101 10:45:56.622" level="INFO">Locator found successfully.</msg>
-<status status="PASS" starttime="20240101 10:45:56.543" endtime="20240101 10:45:56.622"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>selector=//button[@data-cy='dropDownButton-select-columns'][contains(.,'SelectedAll')]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<msg timestamp="20240101 10:46:01.521" level="INFO">Highlighted 1 elements for 2000.</msg>
-<status status="PASS" starttime="20240101 10:45:56.622" endtime="20240101 10:46:03.606"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>//label[@for='All'][contains(.,'All')]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<msg timestamp="20240101 10:46:03.740" level="INFO">Highlighted 1 elements for 2000.</msg>
-<status status="PASS" starttime="20240101 10:46:03.606" endtime="20240101 10:46:05.818"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>//label[@for='delta-2'][contains(.,'Delta')]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<msg timestamp="20240101 10:46:05.918" level="INFO">Highlighted 1 elements for 2000.</msg>
-<status status="PASS" starttime="20240101 10:46:05.819" endtime="20240101 10:46:07.970"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>//label[@for='deviceId-3'][contains(.,'Device ID')]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<msg timestamp="20240101 10:46:08.071" level="INFO">Highlighted 1 elements for 2000.</msg>
-<status status="PASS" starttime="20240101 10:46:07.970" endtime="20240101 10:46:10.141"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>//label[@for='liters-5'][contains(.,'Volume')]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<msg timestamp="20240101 10:46:10.221" level="INFO">Highlighted 1 elements for 2000.</msg>
-<status status="PASS" starttime="20240101 10:46:10.141" endtime="20240101 10:46:12.286"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>(//button[@class='refreshSelector_dropdown__iYwtB'][contains(.,'Off')])[1]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<msg timestamp="20240101 10:46:12.377" level="INFO">Highlighted 1 elements for 2000.</msg>
-<status status="PASS" starttime="20240101 10:46:12.286" endtime="20240101 10:46:14.420"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>//button[@class='refreshSelector_dropOption__9KRbw'][contains(.,'30 sec')]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<msg timestamp="20240101 10:46:14.504" level="INFO">Highlighted 1 elements for 2000.</msg>
-<status status="PASS" starttime="20240101 10:46:14.420" endtime="20240101 10:46:16.576"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>(//button[@class='eventDateCard_dateButton__yTXz5'][contains(.,'Last 30 minutes')])[1]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<msg timestamp="20240101 10:46:16.673" level="INFO">Highlighted 1 elements for 2000.</msg>
-<status status="PASS" starttime="20240101 10:46:16.576" endtime="20240101 10:46:18.744"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>(//button[contains(.,'apply date range')])[1]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<msg timestamp="20240101 10:46:18.825" level="INFO">Highlighted 1 elements for 2000.</msg>
-<status status="PASS" starttime="20240101 10:46:18.744" endtime="20240101 10:46:20.920"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>(//button[contains(.,'Last 5 minutes')])[1]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<msg timestamp="20240101 10:46:21.004" level="INFO">Highlighted 1 elements for 2000.</msg>
-<status status="PASS" starttime="20240101 10:46:20.920" endtime="20240101 10:46:23.157"/>
-</kw>
-<kw name="Get Element" library="Browser">
-<arg>selector=(//p[contains(.,'Event Created')])[1]</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<msg timestamp="20240101 10:46:23.206" level="INFO">Locator found successfully.</msg>
-<status status="PASS" starttime="20240101 10:46:23.157" endtime="20240101 10:46:23.206"/>
-</kw>
-<kw name="Get Element" library="Browser">
-<arg>selector=//p[contains(.,'Event Sent')]</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<msg timestamp="20240101 10:46:23.255" level="INFO">Locator found successfully.</msg>
-<status status="PASS" starttime="20240101 10:46:23.206" endtime="20240101 10:46:23.255"/>
-</kw>
-<kw name="Get Element" library="Browser">
-<arg>selector=//p[contains(.,'Delta')]</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<msg timestamp="20240101 10:46:23.305" level="INFO">Locator found successfully.</msg>
-<status status="PASS" starttime="20240101 10:46:23.255" endtime="20240101 10:46:23.305"/>
-</kw>
-<kw name="Get Element" library="Browser">
-<arg>selector=//div[contains(@class,'PB4cB MuiBox-root css-0')]</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<msg timestamp="20240101 10:46:23.353" level="INFO">Locator found successfully.</msg>
-<status status="PASS" starttime="20240101 10:46:23.305" endtime="20240101 10:46:23.353"/>
-</kw>
-<kw name="Get Element" library="Browser">
-<arg>selector=//p[contains(.,'RSSI')]</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<msg timestamp="20240101 10:46:23.388" level="INFO">Locator found successfully.</msg>
-<status status="PASS" starttime="20240101 10:46:23.353" endtime="20240101 10:46:23.388"/>
-</kw>
-<kw name="Get Element" library="Browser">
-<arg>selector=//p[contains(.,'Volume')]</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<msg timestamp="20240101 10:46:23.425" level="INFO">Locator found successfully.</msg>
-<status status="PASS" starttime="20240101 10:46:23.388" endtime="20240101 10:46:23.425"/>
-</kw>
-<kw name="Get Element" library="Browser">
-<arg>selector=//p[contains(.,'Channel')]</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<msg timestamp="20240101 10:46:23.463" level="INFO">Locator found successfully.</msg>
-<status status="PASS" starttime="20240101 10:46:23.425" endtime="20240101 10:46:23.463"/>
-</kw>
-<status status="PASS" starttime="20240101 10:45:52.389" endtime="20240101 10:46:23.463"/>
-</kw>
-<kw name="Selecionar o Event List &quot;Selected All, Off, Relative time ranges&quot;" library="dashboard_staging">
-<kw name="Click" library="Browser">
-<arg>selector=//button[contains(.,'SelectedAll')]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<msg timestamp="20240101 10:46:23.545" level="INFO">Highlighted 1 elements for 2000.</msg>
-<status status="PASS" starttime="20240101 10:46:23.464" endtime="20240101 10:46:25.661"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>selector=//label[contains(.,'All')]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<msg timestamp="20240101 10:46:25.786" level="INFO">Highlighted 1 elements for 2000.</msg>
-<status status="PASS" starttime="20240101 10:46:25.661" endtime="20240101 10:46:27.835"/>
-</kw>
-<kw name="Get Text" library="Browser">
-<arg>selector=//span[contains(.,'Columns')]</arg>
+<kw name="Verificar se o título da página fica &quot;Group Link - Dashboard&quot;" library="smart_retail_staging" sourcename="Verificar se o título da página fica &quot;${TITULOGROUPLINK}&quot;">
+<kw name="Get Title" library="Browser">
+<var>${TITULOGROUPLINK}</var>
+<arg>==</arg>
+<arg>Group Link - Dashboard</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<msg timestamp="20240101 10:46:29.966" level="INFO">Highlighted 1 elements for 2000.</msg>
-<msg timestamp="20240101 10:46:29.967" level="INFO">Text: 'Columns'</msg>
-<status status="PASS" starttime="20240101 10:46:27.835" endtime="20240101 10:46:29.967"/>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20240103 17:14:32.102" level="INFO">Title: 'Group Link - Dashboard'</msg>
+<msg timestamp="20240103 17:14:32.102" level="INFO">${TITULOGROUPLINK} = Group Link - Dashboard</msg>
+<status status="PASS" starttime="20240103 17:14:32.082" endtime="20240103 17:14:32.102"/>
 </kw>
-<kw name="Get Text" library="Browser">
-<arg>selector=//span[contains(.,'(0)')]</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<msg timestamp="20240101 10:46:32.078" level="INFO">Highlighted 1 elements for 2000.</msg>
-<msg timestamp="20240101 10:46:32.078" level="INFO">Text: '(0)'</msg>
-<status status="PASS" starttime="20240101 10:46:29.967" endtime="20240101 10:46:32.078"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>selector=//label[contains(.,'Event Created')]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<msg timestamp="20240101 10:46:32.186" level="INFO">Highlighted 1 elements for 2000.</msg>
-<status status="PASS" starttime="20240101 10:46:32.078" endtime="20240101 10:46:34.235"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>selector=//button[contains(.,'Done')]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<msg timestamp="20240101 10:46:34.321" level="INFO">Highlighted 1 elements for 2000.</msg>
-<status status="PASS" starttime="20240101 10:46:34.235" endtime="20240101 10:46:36.405"/>
-</kw>
-<kw name="Get Text" library="Browser">
-<arg>selector=//div[@class='dropdownCheckboxSecondary_left__wQnFN'][contains(.,'Selected(1)')]</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<msg timestamp="20240101 10:46:38.519" level="INFO">Highlighted 1 elements for 2000.</msg>
-<msg timestamp="20240101 10:46:38.519" level="INFO">Text: 'Selected\n(1)'</msg>
-<status status="PASS" starttime="20240101 10:46:36.405" endtime="20240101 10:46:38.519"/>
-</kw>
-<kw name="Get Element States" library="Browser">
-<arg>(//p[contains(.,'Event Created')])[1]</arg>
-<arg>validate</arg>
-<arg>value &amp; visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20240101 10:46:38.653" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20240101 10:46:38.519" endtime="20240101 10:46:38.653"/>
-</kw>
-<status status="PASS" starttime="20240101 10:46:23.464" endtime="20240101 10:46:38.653"/>
+<status status="PASS" starttime="20240103 17:14:32.080" endtime="20240103 17:14:32.102"/>
 </kw>
 <kw name="Tirar Print" type="TEARDOWN">
 <kw name="Take Screenshot" library="Browser">
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20240101 10:46:38.653" level="WARN">Keyword 'Take Screenshot' found both from a custom library 'Browser' and a standard library 'Screenshot'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'Browser.Take Screenshot' or 'Screenshot.Take Screenshot'.</msg>
-<msg timestamp="20240101 10:46:38.810" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20240101 10:46:38.653" endtime="20240101 10:46:38.810"/>
+<msg timestamp="20240103 17:14:32.102" level="WARN">Keyword 'Take Screenshot' found both from a custom library 'Browser' and a standard library 'Screenshot'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'Browser.Take Screenshot' or 'Screenshot.Take Screenshot'.</msg>
+<msg timestamp="20240103 17:14:32.233" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240103 17:14:32.102" endtime="20240103 17:14:32.233"/>
 </kw>
-<status status="PASS" starttime="20240101 10:46:38.653" endtime="20240101 10:46:38.810"/>
+<status status="PASS" starttime="20240103 17:14:32.102" endtime="20240103 17:14:32.234"/>
 </kw>
-<tag>Tela Event List Selected All</tag>
-<status status="PASS" starttime="20240101 10:45:39.535" endtime="20240101 10:46:38.810"/>
+<tag>Página inicial group link network</tag>
+<status status="PASS" starttime="20240103 17:14:20.966" endtime="20240103 17:14:32.234"/>
 </test>
 <kw name="Close Browser" library="Browser" type="TEARDOWN">
 <arg>All</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<msg timestamp="20240101 10:46:44.909" level="INFO">Closed all browsers</msg>
-<status status="PASS" starttime="20240101 10:46:44.600" endtime="20240101 10:46:44.910"/>
+<msg timestamp="20240103 17:14:37.754" level="INFO">Closed all browsers</msg>
+<status status="PASS" starttime="20240103 17:14:37.492" endtime="20240103 17:14:37.754"/>
 </kw>
-<status status="PASS" starttime="20240101 10:45:38.467" endtime="20240101 10:46:44.910"/>
+<status status="PASS" starttime="20240103 17:14:19.941" endtime="20240103 17:14:37.754"/>
 </suite>
 <statistics>
 <total>
 <stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">Tela Event List Selected All</stat>
+<stat pass="1" fail="0" skip="0">Página inicial group link network</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Dashboard Staging">Dashboard Staging</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Smart Retail Staging">Smart Retail Staging</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20240101 10:46:38.653" level="WARN">Keyword 'Take Screenshot' found both from a custom library 'Browser' and a standard library 'Screenshot'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'Browser.Take Screenshot' or 'Screenshot.Take Screenshot'.</msg>
+<msg timestamp="20240103 17:14:32.102" level="WARN">Keyword 'Take Screenshot' found both from a custom library 'Browser' and a standard library 'Screenshot'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'Browser.Take Screenshot' or 'Screenshot.Take Screenshot'.</msg>
 </errors>
 </robot>
