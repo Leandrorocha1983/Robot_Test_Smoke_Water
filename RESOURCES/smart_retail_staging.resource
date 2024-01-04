@@ -45,3 +45,42 @@ Clicar no botão de "log in"
     Click    selector=//button[contains(.,'log in')]      
 Verificar se o título da página fica "${TITULOGROUPLINK}"
     ${TITULOGROUPLINK}    Get Title    ==    Group Link - Dashboard  
+
+Verificar se o login é "Smart Retail"
+    Click                 selector=//div[@class='MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-1ywl3ov']   
+    Get Element           selector=//h6[contains(.,'qa.smart@grouplinknetwork.com')]
+    Get Element           selector=//h5[contains(.,'QA Group Link Smart')]
+    Get Element           selector=//li[contains(.,'Profile')]
+    Get Element           selector=//div[@class='MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-uxt7gp']
+    Get Element           selector=//span[contains(.,'Message Center')]
+    Get Element           selector=//span[contains(.,'Online campaigns')]
+    Get Element States    //button[contains(.,'create campaign')]    validate    value & visible
+    Get Element           selector=//div[contains(@class,'afJCn gl-send-message')]
+    Get Element           selector=//div[contains(@class,'lTRrl')]
+    Get Element           selector=//div[contains(@class,'KqNQt')]
+    Get Element States    //button[contains(.,'here')]        validate    value & visible
+    Get Element           selector=//span[contains(.,'© 2024 Group Link™. All rights reserved')]
+    Get Element           selector=//a[contains(.,'Privacy')]
+    Get Element           selector=//a[contains(.,'Terms')]
+
+Clicar no botão "create campaign"
+    Click                 selector=//button[contains(.,'create campaign')]    
+    Get Element           selector=//h4[contains(.,'Create a campaign')]
+    Get Element           selector=//button[contains(.,'1. Segmentation')]
+    Get Element           selector=//button[contains(.,'2. Message Content')]
+    Get Element           selector=//button[contains(.,'3. Schedule')]
+    Get Element           selector=//button[contains(.,'4. Review Info')]
+    Get Element           selector=//div[@class='sc-kOHTFB jeTfPh']
+    Get Element           selector=//strong[contains(.,'Set Source Apps')]
+    Get Element           selector=//p[contains(.,'Select at least one mobile app to be the sender')]
+    Get Element           selector=//div[contains(@class,'contAnyApp')]
+    Get Element           selector=//strong[contains(.,'Choose Audience')]
+    Get Element           selector=//p[contains(.,'Add at least one GL Spot to your audience')]
+    Get Element           selector=//div[@class='audienceRightCont']
+    Get Element           selector=//div[contains(@class,'IwaC5')]
+    Get Element           selector=//button[contains(.,'Select All')]
+    Get Element           selector=//div[contains(@class,'9kZ7u false')]
+    
+
+
+
