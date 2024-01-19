@@ -20,7 +20,7 @@ Acessar a home page do site Group Link Smart Retail "STAGING"
     Verificar se o título da página fica "Group Link - Dashboard" 
 
 Login com sucesso GL Smart Retail "STAGING"
-    [Tags]    Logado na página Group Link Network
+    [Tags]    Logado na página GL Smart Retail
     Abrir o navegador
     Ir para o site dashboard group link network
     Clicar no "accept cookies policy"

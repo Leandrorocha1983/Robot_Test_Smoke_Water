@@ -8,12 +8,13 @@ Library    Screenshot
 
 
 
+
 *** Variables ***
 ${BROWSER}                        chromium
 ${HEADLESS}                       ${False} 
 ${SITE_DASHBOARD_STAGING}         https://dashboard-s.grouplinknetwork.com/login
 ${Get Cookies}                    //h5[@class='MuiTypography-root MuiTypography-h5 css-i6vjuv'][contains(.,'accept all cookies')]
-                  
+${NOMEFAKE}                       //input[@placeholder='Report Name']          
 
 
 *** Keywords ***            
@@ -125,12 +126,16 @@ Selecionar o Event List "Selected All, Off, Relative time ranges"
     Get Element States     (//p[contains(.,'Event Created')])[1]    validate    value & visible
 
 Selecionar o "GL Utilities Reports"
+    ${Nome}                FakerLibrary.First Name
     Click                  selector=//button[contains(.,'Reports')]
     Click                  selector=//button[contains(.,'new report')]
-    Fill Text              selector=//input[contains(@placeholder,'Report Name')]    txt=QaTeste 
+    Fill Text              ${NOMEFAKE}    ${Nome}
     Click                  selector=//input[@value='Select'] 
-    Click                  selector=//div[@aria-label='Choose Wednesday, January 3rd, 2024']
-    Click                  selector=//button[contains(.,'Done')]
+    # Click                  selector=//div[@aria-label='Choose Wednesday, January 3rd, 2024']
+    # Click                  selector=//button[contains(.,'Done')]
+    # Click                  selector=//button[contains(.,'LATEST UNTIL')]
+    # Click                  selector=//button[contains(.,'LATEST UNTIL')]            
+
    
 
 
