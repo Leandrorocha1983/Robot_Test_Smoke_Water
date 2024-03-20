@@ -14,7 +14,7 @@ ${BROWSER}                        chromium
 ${HEADLESS}                       ${False} 
 ${SITE_DASHBOARD_STAGING}         https://dashboard-s.grouplinknetwork.com/login
 ${Get Cookies}                    //h5[@class='MuiTypography-root MuiTypography-h5 css-i6vjuv'][contains(.,'accept all cookies')]
-${NOMEFAKE}                       //input[@placeholder='Report Name']          
+${NOMEFAKE}                       //input[@placeholder='My custom report']        
 
 
 *** Keywords ***            
@@ -128,9 +128,12 @@ Selecionar o Event List "Selected All, Off, Relative time ranges"
 Selecionar o "GL Utilities Reports"
     ${Nome}                FakerLibrary.First Name
     Click                  selector=//button[contains(.,'Reports')]
-    Click                  selector=//button[contains(.,'new report')]
+    Click                  selector=//button[contains(.,'Create report')]
     Fill Text              ${NOMEFAKE}    ${Nome}
-    Click                  selector=//input[@value='Select'] 
+    Click                  selector=//p[contains(.,'Select a data type')]
+    Click                  selector=//svg[contains(@id,'icon-chevron-down')
+    Click                  selector=//li[contains(.,'EventListRange')]
+    Click                  selector=//button[contains(@class,'today')]
     # Click                  selector=//div[@aria-label='Choose Wednesday, January 3rd, 2024']
     # Click                  selector=//button[contains(.,'Done')]
     # Click                  selector=//button[contains(.,'LATEST UNTIL')]
